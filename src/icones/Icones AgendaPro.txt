@@ -1,0 +1,1349 @@
+============================================================
+ AGENDA PRO — KIT DE ÍCONES SVG
+============================================================
+
+Padrão dos ícones:
+- viewBox: 0 0 24 24
+- fill: none
+- stroke: currentColor
+- stroke-width: 2
+- stroke-linecap: round
+- stroke-linejoin: round
+
+============================================================
+ 01 — GLOBAL / MARCA
+============================================================
+
+
+<!-- =======================================================
+     logo.svg
+     Logo principal do AgendaPro
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="3" y="4" width="18" height="17" rx="3"
+        stroke="currentColor" stroke-width="2"/>
+  <path d="M8 2V6M16 2V6"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M3 10H21"
+        stroke="currentColor" stroke-width="2"/>
+  <path d="M8 15L10.5 17.5L16 12"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     search.svg
+     Pesquisa
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="11" cy="11" r="7"
+          stroke="currentColor" stroke-width="2"/>
+  <path d="M20 20L16 16"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     menu.svg
+     Menu mobile
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M4 7H20M4 12H20M4 17H20"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     close.svg
+     Fechar menu/modal
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M6 6L18 18M18 6L6 18"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     home.svg
+     Ícone de início
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M3 11L12 3L21 11"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <path d="M5 10V21H19V10"
+        stroke="currentColor"
+        stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     arrow-right.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M5 12H19"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M13 6L19 12L13 18"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     arrow-left.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M19 12H5"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M11 6L5 12L11 18"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     chevron-down.svg
+     Selects, filtros, menus
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M6 9L12 15L18 9"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     chevron-right.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M9 6L15 12L9 18"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     more.svg
+     Mais opções
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="5" cy="12" r="1"
+          fill="currentColor"/>
+  <circle cx="12" cy="12" r="1"
+          fill="currentColor"/>
+  <circle cx="19" cy="12" r="1"
+          fill="currentColor"/>
+</svg>
+
+
+
+============================================================
+ 02 — HOME
+============================================================
+
+
+<!-- =======================================================
+     category.svg
+     Categorias
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="4" y="4" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="14" y="4" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="4" y="14" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="14" y="14" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     location.svg
+     Localização
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M12 21C12 21 19 14 19 9
+           C19 5.1 15.9 2 12 2
+           C8.1 2 5 5.1 5 9
+           C5 14 12 21 12 21Z"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <circle cx="12" cy="9" r="2"
+          stroke="currentColor"
+          stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     filter.svg
+     Filtro de resultados
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M4 6H20"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M7 12H17"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M10 18H14"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     map.svg
+     Mapa/localização
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M9 18L3 21V6L9 3L15 6L21 3V18L15 21L9 18Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <path d="M9 3V18M15 6V21"
+        stroke="currentColor"
+        stroke-width="2"/>
+</svg>
+
+
+
+============================================================
+ 03 — CATEGORIAS
+============================================================
+
+
+<!-- =======================================================
+     barber.svg
+     Barbearia
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="6" cy="18" r="3"
+          stroke="currentColor" stroke-width="2"/>
+  <circle cx="18" cy="18" r="3"
+          stroke="currentColor" stroke-width="2"/>
+  <path d="M8 16L20 4M8 20L20 8"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     manicure.svg
+     Manicure
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M9 3H15V8
+           C15 11 13 13 12 13
+           C11 13 9 11 9 8V3Z"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M8 13H16L18 21H6L8 13Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     salon.svg
+     Salão de beleza
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M4 9H14L20 6V18L14 15H4V9Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <path d="M8 15L10 21"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     photography.svg
+     Fotografia
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M4 7H8L10 4H14L16 7H20V20H4V7Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <circle cx="12" cy="13" r="4"
+          stroke="currentColor"
+          stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     teacher.svg
+     Professor / aulas particulares
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M3 9L12 4L21 9L12 14L3 9Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <path d="M7 12V16C10 19 14 19 17 16V12"
+        stroke="currentColor"
+        stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     technician.svg
+     Técnico
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M14 6L18 10M6 18L14 10"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M5 19L3 21M17 3L21 7"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     health.svg
+     Saúde
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M12 21S4 16 4 9
+           C4 5 9 3 12 7
+           C15 3 20 5 20 9
+           C20 16 12 21 12 21Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <path d="M8 12H10L11 9L13 15L14 12H17"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     pet.svg
+     Pet Care
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M12 19C8 19 6 17 6 14
+           C6 11 8 9 12 9
+           C16 9 18 11 18 14
+           C18 17 16 19 12 19Z"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <circle cx="7" cy="7" r="2"
+          stroke="currentColor" stroke-width="2"/>
+  <circle cx="12" cy="5" r="2"
+          stroke="currentColor" stroke-width="2"/>
+  <circle cx="17" cy="7" r="2"
+          stroke="currentColor" stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     home-services.svg
+     Serviços domésticos
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M3 11L12 4L21 11"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M5 10V20H19V10"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M9 20V14H15V20"
+        stroke="currentColor"
+        stroke-width="2"/>
+</svg>
+
+
+
+============================================================
+ 04 — PÁGINA DE RESULTADOS
+============================================================
+
+
+<!-- =======================================================
+     sort.svg
+     Ordenação
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M8 5V19"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M5 8L8 5L11 8"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <path d="M16 19V5"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M13 16L16 19L19 16"
+        stroke="currentColor" stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     grid.svg
+     Visualização em grade
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="4" y="4" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="14" y="4" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="4" y="14" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="14" y="14" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     list.svg
+     Visualização em lista
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M8 6H20M8 12H20M8 18H20"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <circle cx="4" cy="6" r="1"
+          fill="currentColor"/>
+  <circle cx="4" cy="12" r="1"
+          fill="currentColor"/>
+  <circle cx="4" cy="18" r="1"
+          fill="currentColor"/>
+</svg>
+
+
+
+============================================================
+ 05 — PÁGINA DO NEGÓCIO
+============================================================
+
+
+<!-- =======================================================
+     building.svg
+     Negócio / empresa
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M4 21V4H20V21"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M8 8H10M14 8H16M8 12H10M14 12H16"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M10 21V16H14V21"
+        stroke="currentColor"
+        stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     service.svg
+     Serviço
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M12 3L14.5 8L20 8.8L16 12.7L17 18.2L12 15.5L7 18.2L8 12.7L4 8.8L9.5 8L12 3Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     price.svg
+     Preço
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M12 2V22"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M17 6H9
+           C7 6 6 7.2 6 9
+           C6 12.5 18 11 18 15
+           C18 17 16 18 13 18H7"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     clock.svg
+     Duração do serviço
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M12 7V12L15 14"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     image.svg
+     Imagem do negócio
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="3" y="4" width="18" height="16" rx="2"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <circle cx="8" cy="9" r="2"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M3 17L8 12L12 16L15 13L21 18"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     phone.svg
+     Telefone
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M6 3H9L11 8L8.5 9.5
+           C9.5 12 12 14.5 14.5 15.5
+           L16 13L21 15V18
+           C21 20 19 21 17 21
+           C9 20 4 15 3 7
+           C3 5 4 3 6 3Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+</svg>
+
+
+
+============================================================
+ 06 — AGENDAMENTO
+============================================================
+
+
+<!-- =======================================================
+     calendar.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="3" y="4" width="18" height="18" rx="3"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M8 2V6M16 2V6"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M3 10H21"
+        stroke="currentColor"
+        stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     calendar-check.svg
+     Agendamento confirmado
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="3" y="4" width="18" height="18" rx="3"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M8 2V6M16 2V6M3 10H21"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M8 15L10.5 17.5L16 12"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     check.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M5 12L10 17L19 7"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     check-circle.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M8 12L11 15L16 9"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     x-circle.svg
+     Erro / indisponível
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M9 9L15 15M15 9L9 15"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     unavailable.svg
+     Horário indisponível
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M12 7V12"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M12 16V16.1"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+
+============================================================
+ 07 — CLIENTE
+============================================================
+
+
+<!-- =======================================================
+     user.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="7" r="4"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M5 21C5 17 8 15 12 15
+           C16 15 19 17 19 21"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     users.svg
+     Lista de clientes
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="9" cy="8" r="3"
+          stroke="currentColor" stroke-width="2"/>
+  <circle cx="17" cy="10" r="3"
+          stroke="currentColor" stroke-width="2"/>
+  <path d="M3 20C3 16 6 14 9 14"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M13 20C13 17 15 15 18 15"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     mail.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="3" y="5" width="18" height="14" rx="2"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M3 7L12 13L21 7"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+</svg>
+
+
+
+============================================================
+ 08 — LOGIN / AUTENTICAÇÃO
+============================================================
+
+
+<!-- =======================================================
+     lock.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="5" y="10" width="14" height="11" rx="2"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M8 10V7
+           C8 4.8 9.8 3 12 3
+           C14.2 3 16 4.8 16 7V10"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     eye.svg
+     Mostrar senha
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M2 12S5.5 5 12 5
+           S22 12 22 12
+           S18.5 19 12 19
+           S2 12 2 12Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <circle cx="12" cy="12" r="3"
+          stroke="currentColor"
+          stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     eye-off.svg
+     Ocultar senha
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M3 3L21 21"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M10 5.5C10.6 5.2 11.3 5 12 5
+           C18.5 5 22 12 22 12
+           C21.2 13.7 20 15.1 18.5 16.2"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M6 7C3.5 9 2 12 2 12
+           C3.5 15.5 7 19 12 19
+           C13.4 19 14.7 18.7 15.8 18.2"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     logout.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M10 5H5V19H10"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <path d="M14 8L18 12L14 16"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <path d="M18 12H9"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+
+============================================================
+ 09 — DASHBOARD DO PROFISSIONAL
+============================================================
+
+
+<!-- =======================================================
+     dashboard.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="4" y="4" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="14" y="4" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="4" y="14" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="14" y="14" width="6" height="6" rx="1"
+        stroke="currentColor" stroke-width="2"/>
+</svg>
+
+
+<!-- =======================================================
+     clipboard.svg
+     Agendamentos
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="5" y="4" width="14" height="17" rx="2"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M9 4V3H15V4"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M8 9H16M8 13H16M8 17H13"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     settings.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="3"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M19.4 15A1.7 1.7 0 0 0 19.7 17
+           L18 18.7
+           A1.7 1.7 0 0 0 16 18.7
+           L15 18.3
+           A1.7 1.7 0 0 0 14 20
+           V21H10V20
+           A1.7 1.7 0 0 0 9 18.3
+           L8 18.7
+           A1.7 1.7 0 0 0 6 18.7
+           L4.3 17
+           A1.7 1.7 0 0 0 4.6 15
+           L5 14
+           A1.7 1.7 0 0 0 3 13
+           H2V10H3
+           A1.7 1.7 0 0 0 5 9
+           L4.6 8
+           A1.7 1.7 0 0 0 4.3 6
+           L6 4.3
+           A1.7 1.7 0 0 0 8 4.3
+           L9 4.7
+           A1.7 1.7 0 0 0 10 3
+           V2H14V3
+           A1.7 1.7 0 0 0 15 4.7
+           L16 4.3
+           A1.7 1.7 0 0 0 18 4.3
+           L19.7 6
+           A1.7 1.7 0 0 0 19.4 8
+           L19 9
+           A1.7 1.7 0 0 0 21 10
+           H22V13H21
+           A1.7 1.7 0 0 0 19 14
+           L19.4 15Z"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     bell.svg
+     Notificações
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M18 9C18 5.7 15.8 3 12 3
+           C8.2 3 6 5.7 6 9
+           V13L4 17H20L18 13V9Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <path d="M10 21H14"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+
+============================================================
+ 10 — SERVIÇOS / CRUD
+============================================================
+
+
+<!-- =======================================================
+     plus.svg
+     Adicionar serviço
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M12 5V19M5 12H19"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     edit.svg
+     Editar
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M4 20H8L19 9
+           C20.1 7.9 20.1 6.1 19 5
+           C17.9 3.9 16.1 3.9 15 5L4 16V20Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <path d="M13 7L17 11"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     trash.svg
+     Excluir
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M5 7H19"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M10 11V17M14 11V17"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M9 7V4H15V7"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M7 7L8 21H16L17 7"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     save.svg
+     Salvar
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M5 3H17L20 6V21H5V3Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <path d="M8 3V9H16V3"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M8 21V14H16V21"
+        stroke="currentColor"
+        stroke-width="2"/>
+</svg>
+
+
+
+============================================================
+ 11 — HORÁRIOS
+============================================================
+
+
+<!-- =======================================================
+     time.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M12 7V12L15 14"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     calendar-days.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <rect x="3" y="4" width="18" height="18" rx="3"
+        stroke="currentColor"
+        stroke-width="2"/>
+  <path d="M8 2V6M16 2V6M3 10H21"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M8 14H8.01M12 14H12.01M16 14H16.01
+           M8 18H8.01M12 18H12.01M16 18H16.01"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     pause.svg
+     Dia/horário fechado
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M10 9V15M14 9V15"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+
+============================================================
+ 12 — AÇÕES DE AGENDAMENTO
+============================================================
+
+
+<!-- =======================================================
+     confirm.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M8 12L11 15L16 9"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     cancel.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M9 9L15 15M15 9L9 15"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     refresh.svg
+     Futuro reagendamento/atualização
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M20 11A8 8 0 0 0 6 6L4 8"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M4 4V8H8"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <path d="M4 13A8 8 0 0 0 18 18L20 16"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M20 20V16H16"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+
+============================================================
+ 13 — PERSONALIZAÇÃO DO NEGÓCIO
+============================================================
+
+
+<!-- =======================================================
+     palette.svg
+     Tema/cores
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M12 3C7 3 3 6.5 3 11
+           C3 16 7 20 12 20
+           H15
+           C16.7 20 18 18.7 18 17
+           C18 15.8 17.2 15 16 15H15
+           C13.3 15 12 13.7 12 12
+           C12 10.3 13.3 9 15 9H17
+           C19.2 9 21 10.8 21 13
+           C21 7.5 17 3 12 3Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <circle cx="7.5" cy="10" r="1"
+          fill="currentColor"/>
+  <circle cx="10" cy="7" r="1"
+          fill="currentColor"/>
+  <circle cx="14" cy="6.5" r="1"
+          fill="currentColor"/>
+</svg>
+
+
+<!-- =======================================================
+     upload.svg
+     Upload de imagem
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M12 16V4"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M7 9L12 4L17 9"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <path d="M5 20H19"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+
+============================================================
+ 14 — ESTADOS / FEEDBACK
+============================================================
+
+
+<!-- =======================================================
+     info.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M12 11V16"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M12 8V8.1"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     warning.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M12 3L21 20H3L12 3Z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  <path d="M12 9V13"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M12 16V16.1"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+<!-- =======================================================
+     success.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M8 12L11 15L16 9"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     error.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="9"
+          stroke="currentColor"
+          stroke-width="2"/>
+  <path d="M9 9L15 15M15 9L9 15"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
+
+
+
+============================================================
+ 15 — NAVEGAÇÃO DO DASHBOARD
+============================================================
+
+
+<!-- =======================================================
+     back.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M19 12H5"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M11 6L5 12L11 18"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     forward.svg
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M5 12H19"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M13 6L19 12L13 18"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+
+<!-- =======================================================
+     external-link.svg
+     Abrir página pública
+======================================================= -->
+
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M14 4H20V10"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <path d="M20 4L12 12"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+  <path d="M19 14V19C19 20.1 18.1 21 17 21H5
+           C3.9 21 3 20.1 3 19V7
+           C3 5.9 3.9 5 5 5H10"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+</svg>
