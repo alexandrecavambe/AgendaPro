@@ -1,0 +1,71 @@
+:root {
+   --primary: #2563EB;
+   --primary-dark: #1D4ED8;
+   --primary-light: #DBEAFE;
+
+   --secondary: #7C3AED;
+   --secondary-dark: #6D28D9;
+   --secondary-light: #EDE9FE;
+
+   --background: #F8FAFC;
+   --surface: #FFFFFF;
+   --surface-secondary: #F1F5F9;
+
+   --text-primary: #0F172A;
+   --text-secondary: #475569;
+   --text-muted: #64748B;
+   --text-light: #94A3B8;
+
+   --border: #E2E8F0;
+   --border-light: #F1F5F9;
+
+   --success: #16A34A;
+   --success-light: #DCFCE7;
+
+   --warning: #F59E0B;
+   --warning-light: #FEF3C7;
+   --error: #DC2626;
+   --error-light: #FEE2E2;
+   --info: #0284C7;
+   --info-light: #E0F2FE;
+   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+
+   --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+
+   --shadow-lg: 0 10px 25px rgba(15, 23, 42, 0.10);
+
+   --radius-sm: 6px;
+   --radius-md: 10px;
+   --radius-lg: 14px;
+   --radius-xl: 20px;
+   --radius-full: 999px;
+
+   --space-xs: 4px;
+   --space-sm: 8px;
+   --space-md: 16px;
+   --space-lg: 24px;
+   --space-xl: 32px;
+   --space-2xl: 48px;
+   --space-3xl: 64px;
+
+   --font-family: "Poppins";
+   --font-size-xs: 12px;
+   --font-size-sm: 14px;
+   --font-size-md: 16px;
+   --font-size-lg: 18px;
+   --font-size-xl: 24px;
+   --font-size-2xl: 32px;
+   --font-size-3xl: 40px;
+   --font-regular: 400;
+   --font-medium: 500;
+   --font-semibold: 600;
+   --font-bold: 700;
+
+   --transition-fast: 150ms ease;
+   --transition-normal: 250ms ease;
+   --transition-slow: 350ms ease;
+
+   --container-width: 1200px;
+   --header-height: 72px;
+
+}
