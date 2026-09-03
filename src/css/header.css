@@ -1,4 +1,78 @@
 header {
-    width: 100%;
-    padding: 20px;
+    background-color: var(--surface);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 1080px;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.agendaPro {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.agendaPro svg {
+    width: clamp(1rem, 4vw, 30px);
+    color: var(--primary);
+}
+
+.agendaPro h2 {
+    font-size: clamp(10px, 4vw, 18px);
+    font-weight: 700;
+}
+
+.agendaPro h2 span {
+    color: var(--secondary);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 8px;
+}
+
+.navbar ul li a {
+    color: var(--text-primary);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.loginCadastro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.loginCadastro button {
+    background-color: transparent;
+    font-size: clamp(12px, 1.4vw, 14px);
+    padding: clamp(6px, 2vw, 10px);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.loginCadastro button.cadastro {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+.loginCadastro button.cadastro:hover {
+    transform: scale(1.05);
+}
+
+.loginCadastro button.login:hover {
+    color: var(--primary);
 }
