@@ -25,7 +25,7 @@ header {
 
 .agendaPro h2 {
     font-size: clamp(10px, 4vw, 18px);
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .agendaPro h2 span {
@@ -46,6 +46,11 @@ header {
     color: var(--text-primary);
     font-size: 14px;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-dark);
 }
 
 .loginCadastro {

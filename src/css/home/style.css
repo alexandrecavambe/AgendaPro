@@ -21,17 +21,24 @@ body {
 }
 
 section {
-    width: 100%;
+    max-width: 100%;
 }
 
 #home {
     display: flex;
     justify-content: space-between;
     padding: 0 0 20px 20px;
+    max-width: 100%;
+    box-shadow: var(--shadow-sm);
+}
+
+#home .imagem {
+    min-width: 240px;
+    max-width: 400px;
 }
 
 #home img {
-    max-width: 400px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -48,6 +55,7 @@ section {
 }
 
 .content h1 {
+    color: var(--text-primary);
     font-size: clamp(1.1rem, 4vw, 2.5em);
     padding: 10px 0;
 }
@@ -57,6 +65,7 @@ section {
 }
 
 .content p {
+    color: var(--text-primary);
     font-size: 14px;
     width: 70%;
     margin-bottom: 10px;
@@ -79,7 +88,6 @@ section {
 }
 
 .content-input input {
-
     padding: 12px 25px;
     border: none;
     border-radius: 10px;
@@ -94,6 +102,12 @@ section {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-content button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.02);
 }
 
 .content-info {
@@ -115,13 +129,14 @@ section {
 }
 
 .content-info .info span {
+    color: var(--text-primary);
     font-size: clamp(10px, 2vw, 14px);
 }
 
 #categoria {
-    background-color: #fff;
-    padding: 0 20px 5px 20px;
-    margin-bottom: 10px;
+    background-color: var(--surface);
+    padding: 0 20px 30px 20px;
+
 }
 
 #categoria .all-view {
@@ -130,7 +145,8 @@ section {
 }
 
 #categoria .all-view h1 {
-    font-size: clamp(18px, 3vw, 24px);
+    font-size: clamp(16px, 3vw, 20px);
+    padding: 8px 0;
 }
 
 .all-view button {
@@ -168,6 +184,7 @@ section {
     background-color: transparent;
     padding: 10px;
     border: none;
+    cursor: pointer;
 }
 
 .categoria-icon button svg {
@@ -179,5 +196,338 @@ section {
 }
 
 .categoria-icon span {
+    color: var(--text-primary);
     font-size: 12px;
+}
+
+#destaque {
+    background-color: var(--surface);
+    padding: 0 20px 30px 20px;
+    box-shadow: var(--shadow-sm);
+}
+
+#destaque .all-view {
+    display: flex;
+    justify-content: space-between;
+}
+
+#destaque .all-view h1 {
+    color: var(--text-primary);
+    font-size: clamp(16px, 3vw, 20px);
+}
+
+.cards-destaque {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.cards-destaque .cards {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 8px;
+    padding: 0 12px;
+}
+
+.cards-destaque .cards .cards-img {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.cards .barbearia {
+    background: linear-gradient(90deg, rgb(34, 34, 226), rgb(148, 148, 233), rgb(50, 50, 145));
+}
+
+.cards .salaodebeleza {
+    background: linear-gradient(90deg, rgb(131, 17, 238), rgb(157, 85, 224), rgb(90, 15, 160));
+}
+
+.cards .manicure {
+    background: linear-gradient(90deg, rgb(238, 64, 93), rgb(221, 107, 126), rgb(190, 52, 75));
+}
+
+.cards .fotografia {
+    background: linear-gradient(90deg, rgb(29, 29, 226), rgb(84, 84, 175), rgb(32, 32, 201));
+}
+
+.cards-destaque .cards-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-info h2 {
+    color: var(--text-primary);
+    font-size: clamp(13px, 3vw, 15px);
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.cards-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cards-icon svg {
+    width: 15px;
+}
+
+.cards-icon span {
+    color: var(--text-primary);
+    font-size: clamp(10px, 3vw, 14px);
+    padding: 5px 0;
+}
+
+.icon-barbearia {
+    color: blue;
+}
+
+.icon-manicure {
+    color: palevioletred;
+}
+
+.icon-salaodebeleza {
+    color: blueviolet;
+}
+
+.icon-fotografia {
+    color: blue;
+}
+
+.card-prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+
+.price span {
+    color: var(--text-primary);
+    font-size: clamp(8px, 2vw, 12px);
+}
+
+.card-location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 0;
+}
+
+.card-location svg {
+    width: 15px;
+}
+
+.card-location span {
+    color: var(--text-primary);
+    font-size: clamp(8px, 2vw, 12px);
+}
+
+.view-business {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: clamp(8px, 2vw, 12px);
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-business:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.02);
+}
+
+#profissional {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 30px 20px;
+}
+
+.profi-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.profi-content svg {
+    background-color: rgba(155, 155, 231, 0.685);
+    color: blue;
+    width: 3.6rem;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.profi-content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profi-content-info h1 {
+    font-size: clamp(14px, 3vw, 24px);
+}
+
+.profi-content-info span {
+    font-size: clamp(12px, 3vw, 14px);
+}
+
+#profissional button {
+    height: 40px;
+    background: var(--primary-dark);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#profissional button span {
+    font-size: clamp(10px, 2vw, 12px);
+}
+
+#profissional button svg {
+    width: 1rem;
+}
+
+#profissional button:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    background-color: var(--surface);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 20px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.agendaPro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.agendaPro-content span {
+    font-size: clamp(10px, 4vw, 12px);
+}
+
+.agendaPro-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.agendaPro-info svg {
+    width: 1.4rem;
+}
+
+.agendaPro-info h2 {
+    color: var(--text-primary);
+    font-size: clamp(10px, 4vw, 14px);
+    font-weight: 900;
+}
+
+.agendaPro-info h2 span {
+    color: var(--secondary);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h2 {
+    font-size: clamp(10px, 4vw, 14px);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: clamp(10px, 4vw, 12px);
+}
+
+.links a:hover {
+    color: var(--primary-dark);
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.social-media h2 {
+    font-size: clamp(10px, 4vw, 14px);
+}
+
+.social-media .icon-media {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.icon-media a svg {
+    width: 1rem;
+    color: #000;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.copyright span {
+    color: var(--text-primary);
+    font-size: clamp(10px, 4vw, 12px);
+}
+
+.copyright div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: clamp(10px, 4vw, 12px);
+}
+
+.copyright a:hover {
+    color: var(--primary-dark);
+}
+
+.copyright a span {
+    color: #00000073;
+    padding: 0 10px;
 }
