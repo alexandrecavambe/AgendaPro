@@ -1,0 +1,120 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--background);
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 56px;
+    border: 1px solid #000;
+}
+
+.banner {
+    min-height: 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/src/images/barbearia.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--surface-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    position: relative;
+}
+
+
+
+.caminho nav ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.caminho nav ul li a {
+    color: var(--surface-secondary);
+    font-size: clamp(10px, 2vw, 15px);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.caminho nav ul li+li::before {
+    content: ">";
+    color: #ccc;
+}
+
+.perfil {
+    display: flex;
+    gap: 20px;
+}
+
+.perfil-foto {
+    max-height: 120px;
+    width: 100px;
+    border: 2px solid var(--warning-light);
+    border-radius: 12px;
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-info p {
+    font-size: clamp(10px, 2vw, 14px);
+
+}
+
+.perfil-info .box-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.perfil-info .box-info h2 {
+    font-size: clamp(16px, 3vw, 18px);
+    padding: 8px 0;
+}
+
+.perfil-info .box-info svg {
+    width: clamp(1rem, 1vw, 1.4rem);
+}
+
+.perfil-info span {
+    font-size: clamp(10px, 2vw, 14px);
+    padding: 0 0 8px 0;
+}
+
+.box-location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.box-location p {
+    font-size: clamp(10px, 2vw, 14px);
+}
+
+.banner button {
+    position: absolute;
+    right: 37px;
+    bottom: 12px;
+    background: transparent;
+    color: var(--surface-secondary);
+    border: 2px solid var(--warning-light);
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 110px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.banner button:hover {
+    color: var(--warning-light);
+    transform: translateY(-4%);
+}
