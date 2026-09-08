@@ -505,7 +505,7 @@ Padrão dos ícones:
      service.svg
      Serviço
 ======================================================= -->
-
+//avaliações
 <svg viewBox="0 0 24 24" fill="none">
   <path d="M12 3L14.5 8L20 8.8L16 12.7L17 18.2L12 15.5L7 18.2L8 12.7L4 8.8L9.5 8L12 3Z"
         stroke="currentColor"

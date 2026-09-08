@@ -9,30 +9,28 @@ body {
 .container {
     height: 100vh;
     width: 100%;
-    margin-top: 56px;
-    border: 1px solid #000;
 }
 
 .banner {
     min-height: 230px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/src/images/barbearia.png");
     background-size: cover;
-    background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
     color: var(--surface-secondary);
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-
     position: relative;
+    margin-top: 56px;
 }
 
 
 
 .caminho nav ul {
     display: flex;
-    gap: 12px;
+    gap: 5px;
     list-style: none;
 }
 
@@ -42,6 +40,8 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
 }
+
+
 
 .caminho nav ul li+li::before {
     content: ">";
@@ -54,7 +54,7 @@ body {
 }
 
 .perfil-foto {
-    max-height: 120px;
+    height: 100px;
     width: 100px;
     border: 2px solid var(--warning-light);
     border-radius: 12px;
@@ -65,9 +65,24 @@ body {
     flex-direction: column;
 }
 
-.perfil-info p {
-    font-size: clamp(10px, 2vw, 14px);
+.perfil-info .banner-avaliable {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
 
+.perfil-info .banner-avaliable svg {
+    color: gold;
+    max-width: 20px;
+}
+
+.perfil-info p {
+    font-size: clamp(10px, 2vw, 12px);
+}
+
+.perfil-info span {
+    font-size: clamp(10px, 2vw, 12px);
+    padding: 0 0 8px 0;
 }
 
 .perfil-info .box-info {
@@ -82,13 +97,10 @@ body {
 }
 
 .perfil-info .box-info svg {
+    color: rgb(48, 48, 247);
     width: clamp(1rem, 1vw, 1.4rem);
 }
 
-.perfil-info span {
-    font-size: clamp(10px, 2vw, 14px);
-    padding: 0 0 8px 0;
-}
 
 .box-location {
     display: flex;
@@ -97,7 +109,7 @@ body {
 }
 
 .box-location p {
-    font-size: clamp(10px, 2vw, 14px);
+    font-size: clamp(10px, 2vw, 12px);
 }
 
 .banner button {
@@ -117,4 +129,66 @@ body {
 .banner button:hover {
     color: var(--warning-light);
     transform: translateY(-4%);
+}
+
+.tabsNav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--surface);
+    padding: clamp(5px, 1vw, 8px) 30px;
+    border-bottom: 1px solid var(--border);
+
+    position: sticky;
+    top: 54px;
+    z-index: 99;
+}
+
+.tabsNav ul {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    list-style: none;
+}
+
+.tabsNav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    font-size: clamp(8px, 1.8vw, 14px);
+    color: var(--text-primary);
+    padding: 8px 0;
+}
+
+.tabsNav ul li a svg {
+    max-width: 20px;
+}
+
+.tabsNav ul li a.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.tabsNav .nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tabsNav .nav-btn button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    color: var(--text-primary);
+    font-size: clamp(8px, 1.8vw, 12px);
+    padding: 5px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tabsNav .nav-btn button:hover {
+    transform: scale(1.03);
 }
