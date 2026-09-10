@@ -4,11 +4,7 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: var(--background);
-}
-
-.container {
-    height: 100vh;
-    width: 100%;
+    position: relative;
 }
 
 .banner {
@@ -121,7 +117,11 @@ body {
     border: 2px solid var(--warning-light);
     border-radius: 5px;
     padding: 5px;
-    max-width: 110px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: clamp(10px, 2vw, 12px);
+    max-width: 120px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -191,4 +191,462 @@ body {
 
 .tabsNav .nav-btn button:hover {
     transform: scale(1.03);
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container #visaogeral {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    background-color: var(--surface);
+}
+
+.visaogeral-content {
+    width: 90%;
+    padding: 20px;
+}
+
+.visaogeral-about h2 {
+    color: var(--text-primary);
+    font-size: clamp(13px, 2.5vw, 20px);
+    font-weight: 800;
+}
+
+.visaogeral-about p {
+    color: var(--text-primary);
+    font-size: clamp(10px, 2vw, 13px);
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 5px 0;
+}
+
+.visaogeral-service {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.header-info .header-title {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.header-info .header-title h2 {
+    color: var(--text-primary);
+    font-size: clamp(13px, 2.5vw, 20px);
+    font-weight: 800;
+}
+
+.header-info button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: var(--primary);
+    font-size: clamp(12px, 2vw, 14px);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header-info button:hover {
+    color: var(--primary-dark);
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style: none;
+}
+
+.services li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+}
+
+.services li .foto-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.services li .foto-info .services-foto {
+    min-width: 40px;
+    max-width: 70px;
+}
+
+.services li .foto-info .services-foto img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.services-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-info h2 {
+    color: var(--text-primary);
+    font-size: clamp(13px, 2.5vw, 15px);
+    line-height: 1rem;
+    font-weight: 800;
+}
+
+.services-info span {
+    color: var(--text-secondary);
+    font-size: clamp(10px, 2vw, 13px);
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 5px 0;
+}
+
+.service-time {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.service-time svg {
+    color: var(--text-secondary);
+}
+
+.service-time span {
+    color: var(--text-secondary);
+    font-size: clamp(10px, 2vw, 12px);
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 5px 0;
+}
+
+.services li p {
+    color: var(--text-primary);
+    font-size: clamp(10px, 2vw, 12px);
+    font-weight: 800;
+    line-height: 1.2em;
+}
+
+.services li button {
+    background-color: var(--primary);
+    color: var(--surface-secondary);
+    font-size: clamp(10px, 2vw, 13px);
+    font-weight: 400;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services li button:hover {
+    transform: translateY(-1px);
+}
+
+.service-galeria {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-galeria ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+    list-style: none;
+}
+
+.service-galeria ul li {
+    overflow: hidden;
+}
+
+.service-galeria ul li img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.avaliable-itens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+}
+
+.avaliable-item {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+
+
+.avaliable-item img {
+    width: 10;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.avaliable-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.avaliable-info h2 {
+    color: var(--text-primary);
+    font-weight: 800;
+    font-size: clamp(10px, 2vw, 13px);
+}
+
+.avaliable-info span {
+    color: var(--text-secondary);
+    font-size: clamp(10px, 2vw, 12px);
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 5px 0;
+}
+
+.avaliable-info svg {
+    color: goldenrod;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.card-agendeseuhorario {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+}
+
+.agendeSeuHorario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agendeSeuHorario svg {
+    color: var(--primary-dark);
+    width: 3vw;
+}
+
+.agendeSeuHorario .description {
+    display: flex;
+    flex-direction: column;
+}
+
+.agendeSeuHorario .description h2 {
+    color: var(--text-primary);
+    font-size: clamp(13px, 2.5vw, 20px);
+    font-weight: 800;
+}
+
+.agendeSeuHorario .description span {
+    color: var(--text-secondary);
+    font-size: clamp(10px, 2vw, 12px);
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 5px 0;
+}
+
+.card-agendeseuhorario button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary);
+    color: var(--surface-secondary);
+    font-size: clamp(10px, 2vw, 13px);
+    font-weight: 400;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-agendeseuhorario button svg {
+    width: 2vw;
+}
+
+.info-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: var(--shadow-md);
+    border-radius: 10px;
+}
+
+.info-contact h2 {
+    color: var(--text-primary);
+    font-size: clamp(13px, 2.5vw, 18px);
+    font-weight: 800;
+    padding: 10px 0;
+}
+
+.contact-tel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-tel svg {
+    width: 2vw;
+}
+
+.contact-tel span {
+    color: var(--text-primary);
+    font-size: clamp(10px, 2vw, 13px);
+    font-weight: 300;
+    line-height: 1.2em;
+    padding: 5px 0
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+}
+
+.contact svg {
+    width: 2vw;
+}
+
+.contact a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: clamp(12px, 2vw, 14px)
+}
+
+.contact .icon-whatsapp {
+    color: var(--success);
+}
+
+.contact .icon-insta {
+    color: #e1306be0;
+}
+
+.contact .icon-local {
+    color: var(--primary-dark);
+}
+
+.contact .icon-linkexterno {
+    color: var(--text-secondary);
+}
+
+.funcionamentos {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: var(--shadow-md);
+}
+
+.funcionamentos h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-primary);
+    font-size: clamp(13px, 2.5vw, 16px);
+    font-weight: 800;
+    padding: 10px 0;
+}
+
+.funcionamentos h2 svg {
+    color: var(--primary-dark);
+}
+
+.list-horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+}
+
+.list-horarios li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-horarios li span {
+    color: var(--text-primary);
+    font-size: clamp(10px, 2vw, 13px);
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 5px 0;
+}
+
+.days-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.aberto-agora {
+    background-color: rgba(205, 252, 205, 0.733);
+    color: rgb(4, 209, 4);
+    max-width: 120px;
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: 800;
+    text-align: center;
+    border-radius: 18px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.location-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location-header span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-primary);
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: 800;
+}
+
+.location-header span svg {
+    color: var(--primary-dark);
+    width: 2vw;
+}
+
+.localizacao .btn-local {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: clamp(10px, 2vw, 12px);
 }

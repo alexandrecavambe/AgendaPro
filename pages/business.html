@@ -83,7 +83,16 @@
                 <p>Mais que um corte, é confiança em cada detalhe.</p>
             </div>
         </div>
-        <button type="button">Ver mais fotos</button>
+        <button type="button">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16px">
+                <rect x="5" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2" />
+                <path d="M3 7V19C3 20.1 3.9 21 5 21H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <circle cx="15" cy="7" r="1.5" fill="currentColor" />
+                <path d="M5 14L9 10L12 13L14 11L19 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            Ver mais fotos
+        </button>
     </section>
 
     <nav class="tabsNav">
@@ -154,175 +163,144 @@
         </div>
     </nav>
     <main class="container">
-        <article>
-            <section id="#visaogeral">
-                <div class="visaogeral-content">
-                    <div class="visaogeral-about">
-                        <div class="visaogeral-about-title">
+
+        <section id="visaogeral">
+            <article class="visaogeral-content">
+                <div class="visaogeral-about">
+                    <h2>Sobre</h2>
+                    <p>
+                        A Barbearia Alpha é o lugar certo para quem valoriza estilo, qualidade e um bom atendimento.
+                        Contamos com profissionais experientes e um ambiete moderno, pensando para o seu conforto
+                    </p>
+                </div>
+                <div class="visaogeral-service">
+                    <div class="header-info">
+                        <div class="header-title">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
-                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
-                                <path d="M12 11V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <circle cx="12" cy="7.5" r="1" fill="currentColor" />
+                                <circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="2" />
+                                <circle cx="7" cy="17" r="3" stroke="currentColor" stroke-width="2" />
+                                <path d="M9.5 8.5L20 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M9.5 15.5L20 21" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
                             </svg>
-                            <h2>Sobre</h2>
+                            <h2>Nossos serviços</h2>
                         </div>
-                        <p>
-                            A Barbearia Alpha é o lugar certo para quem valoriza estilo, qualidade e um bom atendimento.
-                            Contamos com profissionais experientes e um ambiete moderno, pensando para o seu conforto
-                        </p>
+                        <button type="button" class="btn-view">
+                            Ver todos
+                            <svg viewBox="0 0 24 24" fill="none" width="16px">
+                                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M13 6L19 12L13 18" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
                     </div>
-                    <div class="visaogeral-service">
+                    <ul class="services">
+                        <li>
+                            <div class="foto-info">
+                                <div class="services-foto">
+                                    <img src="/src/images/corte-img.png" alt="foto do corte">
+                                </div>
+                                <div class="services-info">
+                                    <h2>Corte de Cabelo</h2>
+                                    <span>Corte moderno, degrade e outros estilos.</span>
+                                </div>
+                            </div>
+                            <div class="service-time">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"
+                                    width="20px">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
+                                    <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>45 min</span>
+                            </div>
+                            <p>3.000 <span>Kz</span></p>
+                            <button type="button">Agendar</button>
+                        </li>
+                        <li>
+                            <div class="foto-info">
+                                <div class="services-foto">
+                                    <img src="/src/images/corte-img.png" alt="foto do corte">
+                                </div>
+                                <div class="services-info">
+                                    <h2>Corte de Cabelo</h2>
+                                    <span>Corte moderno, degrade e outros estilos.</span>
+                                </div>
+                            </div>
+                            <div class="service-time">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"
+                                    width="20px">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
+                                    <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>45 min</span>
+                            </div>
+                            <p>3.000 <span>Kz</span></p>
+                            <button type="button">Agendar</button>
+                        </li>
+                        <li>
+                            <div class="foto-info">
+                                <div class="services-foto">
+                                    <img src="/src/images/corte-img.png" alt="foto do corte">
+                                </div>
+                                <div class="services-info">
+                                    <h2>Corte de Cabelo</h2>
+                                    <span>Corte moderno, degrade e outros estilos.</span>
+                                </div>
+                            </div>
+                            <div class="service-time">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"
+                                    width="20px">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
+                                    <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>45 min</span>
+                            </div>
+                            <p>3.000 <span>Kz</span></p>
+                            <button type="button">Agendar</button>
+                        </li>
+                        <li>
+                            <div class="foto-info">
+                                <div class="services-foto">
+                                    <img src="/src/images/corte-img.png" alt="foto do corte">
+                                </div>
+                                <div class="services-info">
+                                    <h2>Corte de Cabelo</h2>
+                                    <span>Corte moderno, degrade e outros estilos.</span>
+                                </div>
+                            </div>
+                            <div class="service-time">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"
+                                    width="20px">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
+                                    <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>45 min</span>
+                            </div>
+                            <p>3.000 Kz</p>
+                            <button type="button">Agendar</button>
+                        </li>
+                    </ul>
+                    <div class="service-galeria">
                         <div class="header-info">
                             <div class="header-title">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
-                                    <circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="2" />
-                                    <circle cx="7" cy="17" r="3" stroke="currentColor" stroke-width="2" />
-                                    <path d="M9.5 8.5L20 3" stroke="currentColor" stroke-width="2"
+                                    <rect x="5" y="3" width="14" height="14" rx="2" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <path d="M3 7V19C3 20.1 3.9 21 5 21H17" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" />
-                                    <path d="M9.5 15.5L20 21" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                <h2>Nossos serviços</h2>
-                            </div>
-                            <button type="button" class="btn-view">
-                                <span>Ver todos</span>
-                                <svg viewBox="0 0 24 24" fill="none" width="20px">
-                                    <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                    <path d="M13 6L19 12L13 18" stroke="currentColor" stroke-width="2"
+                                    <circle cx="15" cy="7" r="1.5" fill="currentColor" />
+                                    <path d="M5 14L9 10L12 13L14 11L19 16" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                            </button>
-                        </div>
-                        <ul class="services">
-                            <li>
-                                <div class="services-foto"></div>
-                                <div class="services-info">
-                                    <div>Corte de Cabelo</div>
-                                    <span>Corte moderno, degrade e outros estilos.</span>
-                                </div>
-                                <div class="service-time">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"
-                                        width="20px">
-                                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
-                                        <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>45 min</span>
-                                </div>
-                                <h2>3.000 <span>Kz</span></h2>
-                                <button type="button">Agendar</button>
-                            </li>
-                            <li>
-                                <div class="services-foto"></div>
-                                <div class="services-info">
-                                    <div>Corte de Cabelo</div>
-                                    <span>Corte moderno, degrade e outros estilos.</span>
-                                </div>
-                                <div class="service-time">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"
-                                        width="20px">
-                                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
-                                        <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>45 min</span>
-                                </div>
-                                <h2>3.000 <span>Kz</span></h2>
-                                <button type="button">Agendar</button>
-                            </li>
-                            <li>
-                                <div class="services-foto"></div>
-                                <div class="services-info">
-                                    <div>Corte de Cabelo</div>
-                                    <span>Corte moderno, degrade e outros estilos.</span>
-                                </div>
-                                <div class="service-time">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"
-                                        width="20px">
-                                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
-                                        <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>45 min</span>
-                                </div>
-                                <h2>3.000 <span>Kz</span></h2>
-                                <button type="button">Agendar</button>
-                            </li>
-                            <li>
-                                <div class="services-foto"></div>
-                                <div class="services-info">
-                                    <div>Corte de Cabelo</div>
-                                    <span>Corte moderno, degrade e outros estilos.</span>
-                                </div>
-                                <div class="service-time">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:c2pa="http://c2pa.org/manifest"
-                                        width="20px">
-                                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
-                                        <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>45 min</span>
-                                </div>
-                                <h2>3.000 <span>Kz</span></h2>
-                                <button type="button">Agendar</button>
-                            </li>
-                        </ul>
-                        <div class="service-galeria">
-                            <div class="header-info">
-                                <div class="header-title">
-                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        width="20px">
-                                        <rect x="5" y="3" width="14" height="14" rx="2" stroke="currentColor"
-                                            stroke-width="2" />
-                                        <path d="M3 7V19C3 20.1 3.9 21 5 21H17" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" />
-                                        <circle cx="15" cy="7" r="1.5" fill="currentColor" />
-                                        <path d="M5 14L9 10L12 13L14 11L19 16" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <h2>Galeria</h2>
-                                </div>
-                                <button type="button" class="btn-view">
-                                    <span>Ver todas as fotos</span>
-                                    <svg viewBox="0 0 24 24" fill="none" width="20px">
-                                        <path d="M5 12H19" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" />
-                                        <path d="M13 6L19 12L13 18" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="fotogaleria"></div>
-                                </li>
-                                <li>
-                                    <div class="fotogaleria"></div>
-                                </li>
-                                <li>
-                                    <div class="fotogaleria"></div>
-                                </li>
-                                <li>
-                                    <div class="fotogaleria"></div>
-                                </li>
-                                <li>
-                                    <div class="fotogaleria"></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="visaogeral-avaliable">
-                        <div class="header-info">
-                            <div class="header-title">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16px">
-                                    <path fill="currentColor"
-                                        d="M12 2.5L14.93 8.44L21.5 9.39L16.75 13.99L17.87 20.5L12 17.42L6.13 20.5L7.25 13.99L2.5 9.39L9.07 8.44L12 2.5Z" />
-                                </svg>
-                                <h2>Avaliações dos clientes</h2>
+                                <h2>Galeria</h2>
                             </div>
                             <button type="button" class="btn-view">
                                 <span>Ver todas as fotos</span>
@@ -333,8 +311,46 @@
                                 </svg>
                             </button>
                         </div>
+                        <ul>
+                            <li>
+                                <img src="/src/images/img-1.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/src/images/img-2.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/src/images/img-3.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/src/images/img-4.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/src/images/img-5.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="visaogeral-avaliable">
+                    <div class="header-info">
+                        <div class="header-title">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16px">
+                                <path fill="currentColor"
+                                    d="M12 2.5L14.93 8.44L21.5 9.39L16.75 13.99L17.87 20.5L12 17.42L6.13 20.5L7.25 13.99L2.5 9.39L9.07 8.44L12 2.5Z" />
+                            </svg>
+                            <h2>Avaliações dos clientes</h2>
+                        </div>
+                        <button type="button" class="btn-view">
+                            <span>Ver todas as avaliações</span>
+                            <svg viewBox="0 0 24 24" fill="none" width="20px">
+                                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M13 6L19 12L13 18" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="avaliable-itens">
                         <div class="avaliable-item">
-                            <div class="avaliable-foto"></div>
+                            <img src="/src/images/perfil-1.png" alt="foto de perfil do cliente">
                             <div class="avaliable-info">
                                 <h2>Carlos Mendes</h2>
                                 <div class="stars">
@@ -364,7 +380,7 @@
                             </div>
                         </div>
                         <div class="avaliable-item">
-                            <div class="avaliable-foto"></div>
+                            <img src="/src/images/perfil-1.png" alt="foto de perfil do cliente">
                             <div class="avaliable-info">
                                 <h2>Carlos Mendes</h2>
                                 <div class="stars">
@@ -396,186 +412,248 @@
                         </div>
                     </div>
                 </div>
-                <aside>
-                    <div class="aside-content">
-                        <div class="agendeSeuHorario">
-                            <svg viewBox="0 0 24 24" fill="none" width="20px">
-                                <rect x="3" y="4" width="18" height="18" rx="3" stroke="currentColor"
-                                    stroke-width="2" />
-                                <path d="M8 2V6M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <path d="M3 10H21" stroke="currentColor" stroke-width="2" />
-                            </svg>
-                            <div class="description">
-                                <h2>Agende seu horário</h2>
-                                <span>Escolha um serviço e garanta seu atendimento.</span>
-                            </div>
+            </article>
+            <aside class="aside-content">
+                <div class="card-agendeseuhorario">
+                    <div class="agendeSeuHorario">
+                        <svg viewBox="0 0 24 24" fill="none" width="20px">
+                            <rect x="3" y="4" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 2V6M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M3 10H21" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                        <div class="description">
+                            <h2>Agende seu horário</h2>
+                            <span>Escolha um serviço e garanta seu atendimento.</span>
                         </div>
-                        <button type="button">
-                            <svg viewBox="0 0 24 24" fill="none" width="20px">
-                                <rect x="3" y="4" width="18" height="18" rx="3" stroke="currentColor"
-                                    stroke-width="2" />
-                                <path d="M8 2V6M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <path d="M3 10H21" stroke="currentColor" stroke-width="2" />
-                            </svg>
-                            <span>Ver disponibilidade</span>
-                        </button>
                     </div>
-                    <section class="info-contact">
-                        <h2>Informações de contato</h2>
-                        <div class="contact">
-                            <svg viewBox="0 0 24 24" fill="none" width="20px">
-                                <path d="M6 3H9L11 8L8.5 9.5
+                    <button type="button">
+                        <svg viewBox="0 0 24 24" fill="none" width="20px">
+                            <rect x="3" y="4" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 2V6M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M3 10H21" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                        Ver disponibilidade
+                    </button>
+                </div>
+                <section class="info-contact">
+                    <h2>Informações de contato</h2>
+                    <div class="contact-tel">
+                        <svg viewBox="0 0 24 24" fill="none" width="20px">
+                            <path d="M6 3H9L11 8L8.5 9.5
                                          C9.5 12 12 14.5 14.5 15.5
                                          L16 13L21 15V18
                                          C21 20 19 21 17 21
                                          C9 20 4 15 3 7
                                          C3 5 4 3 6 3Z" stroke="currentColor" stroke-width="2"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <span>+244 923 923 789</span>
-                        </div>
-                        <div class="contact">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
-                                <path
-                                    d="M20.52 3.48A11.94 11.94 0 0 0 12.05 0C5.45 0 .08 5.37.08 11.97c0 2.11.55 4.17 1.6 5.98L0 24l6.2-1.63a11.94 11.94 0 0 0 5.85 1.52h.01c6.6 0 11.96-5.37 11.96-11.97 0-3.2-1.24-6.2-3.5-8.44Z"
-                                    fill="currentColor" />
-                                <path
-                                    d="M17.48 14.33c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.74-1.64-2.04-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.5 1.7.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
-                                    fill="#fff" />
-                            </svg>
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>+244 923 923 789</span>
+                    </div>
+                    <div class="contact">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px"
+                            class="icon-whatsapp">
+                            <path
+                                d="M20.52 3.48A11.94 11.94 0 0 0 12.05 0C5.45 0 .08 5.37.08 11.97c0 2.11.55 4.17 1.6 5.98L0 24l6.2-1.63a11.94 11.94 0 0 0 5.85 1.52h.01c6.6 0 11.96-5.37 11.96-11.97 0-3.2-1.24-6.2-3.5-8.44Z"
+                                fill="currentColor" />
+                            <path
+                                d="M17.48 14.33c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.74-1.64-2.04-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.5 1.7.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
+                                fill="#fff" />
+                        </svg>
+                        <a href="#">
+                            Conversar no whatsApp
+                        </a>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px"
+                            class="icon-linkexterno">
+                            <path d="M14 5H19V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M19 5L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M19 14V19C19 19.55 18.55 20 18 20H5C4.45 20 4 19.55 4 19V6C4 5.45 4.45 5 5 5H10"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="contact">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="icon-insta">
+                            <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2" />
+                            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" />
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                        </svg>
 
-                            <span>
-                                <a href="#">Conversar no whatsApp</a>
-                            </span>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
-                                <path d="M14 5H19V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M19 5L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <path
-                                    d="M19 14V19C19 19.55 18.55 20 18 20H5C4.45 20 4 19.55 4 19V6C4 5.45 4.45 5 5 5H10"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div class="contact">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor"
-                                    stroke-width="2" />
-                                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" />
-                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-                            </svg>
-                            <span>
-                                <a href="#">@barbeariaalpha</a>
-                            </span>
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
-                                <path d="M14 5H19V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M19 5L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                <path
-                                    d="M19 14V19C19 19.55 18.55 20 18 20H5C4.45 20 4 19.55 4 19V6C4 5.45 4.45 5 5 5H10"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
+                        <a href="#">
+                            @barbeariaalpha
+                        </a>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px"
+                            class="icon-linkexterno">
+                            <path d="M14 5H19V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M19 5L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M19 14V19C19 19.55 18.55 20 18 20H5C4.45 20 4 19.55 4 19V6C4 5.45 4.45 5 5 5H10"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-                        </div>
-                        <div class="contact">
-                            <svg viewBox="0 0 24 24" fill="none" width="14px">
-                                <path d="M12 21C12 21 19 14 19 9
+                    </div>
+                    <div class="contact">
+                        <svg viewBox="0 0 24 24" fill="none" width="14px" class="icon-local">
+                            <path d="M12 21C12 21 19 14 19 9
                                                      C19 5.1 15.9 2 12 2
                                                      C8.1 2 5 5.1 5 9
                                                      C5 14 12 21 12 21Z" stroke="currentColor" stroke-width="2" />
+                            <circle cx="12" cy="9" r="2" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                        <span>Luanda, Angola</span>
+                    </div>
+                </section>
+
+                <section class="funcionamentos">
+                    <h2>
+                        <svg viewBox="0 0 24 24" fill="none" width="20px">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        Horários de Funcionamento
+                    </h2>
+                    <ul class="list-horarios">
+                        <li>
+                            <span class="days-icon">
+                                <svg viewBox="0 0 24 24" fill="none" width="20px">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                                Segunda - Sexta
+                            </span>
+                            <span>08:00 - 20:00</span>
+                        </li>
+                        <li>
+                            <span class="days-icon">
+                                <svg viewBox="0 0 24 24" fill="none" width="20px">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                                Sábado
+                            </span>
+                            <span>Fechado</span>
+                        </li>
+                        <li>
+                            <span class="days-icon">
+                                <svg viewBox="0 0 24 24" fill="none" width="20px">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                                Segunda - Sexta
+                            </span>
+                            <span>08:00 - 12:00</span>
+                        </li>
+                    </ul>
+                    <span class="aberto-agora">Aberto agora</span>
+                </section>
+                <section class="localizacao">
+                    <div class="location-header">
+                        <span>
+                            <svg viewBox="0 0 24 24" fill="none" width="14px" class="icon-local">
+                                <path d="M12 21C12 21 19 14 19 9
+                                                         C19 5.1 15.9 2 12 2
+                                                         C8.1 2 5 5.1 5 9
+                                                         C5 14 12 21 12 21Z" stroke="currentColor" stroke-width="2" />
                                 <circle cx="12" cy="9" r="2" stroke="currentColor" stroke-width="2" />
                             </svg>
-                            <span>Luanda, Angola</span>
-                        </div>
-                    </section>
-
-                    <section class="funcionamentos">
-                        <h2>
-                            <svg viewBox="0 0 24 24" fill="none" width="20px">
-                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
-                                <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" />
+                            Localização
+                        </span>
+                        <a href="#" class="btn-local">
+                            Ver no Google Maps
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
+                                <path d="M14 5H19V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M19 5L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path
+                                    d="M19 14V19C19 19.55 18.55 20 18 20H5C4.45 20 4 19.55 4 19V6C4 5.45 4.45 5 5 5H10"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
-                            Horários de Funcionamento
-                        </h2>
-                        <div class="horariosFuncionamento">
-                            <ul>
-                                <li>
-                                    <span>
-                                        <svg viewBox="0 0 24 24" fill="none" width="20px">
-                                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
-                                            <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" />
-                                        </svg>
-                                        Segunda - Sexta
-                                    </span>
-                                    <span>08:00 - 20:00</span>
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg viewBox="0 0 24 24" fill="none" width="20px">
-                                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
-                                            <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" />
-                                        </svg>
-                                        Sábado
-                                    </span>
-                                    <span>Fechado</span>
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg viewBox="0 0 24 24" fill="none" width="20px">
-                                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
-                                            <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" />
-                                        </svg>
-                                        Segunda - Sexta
-                                    </span>
-                                    <span>08:00 - 12:00</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button">Aberto agora</button>
-                    </section>
-                    <section class="localizacao">
-                        <div class="header-info">
-                            <div class="header-title">
-                                <svg viewBox="0 0 24 24" fill="none" width="14px">
-                                    <path d="M12 21C12 21 19 14 19 9
-                                                     C19 5.1 15.9 2 12 2
-                                                     C8.1 2 5 5.1 5 9
-                                                     C5 14 12 21 12 21Z" stroke="currentColor" stroke-width="2" />
-                                    <circle cx="12" cy="9" r="2" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                                <h2>Nossos serviços</h2>
-                            </div>
-                            <button type="button" class="btn-view">
-                                <span>Ver no Google Maps</span>
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
-                                    <path d="M14 5H19V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M19 5L11 13" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                    <path
-                                        d="M19 14V19C19 19.55 18.55 20 18 20H5C4.45 20 4 19.55 4 19V6C4 5.45 4.45 5 5 5H10"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="maps">
-                            <iframe src="" frameborder="0"></iframe>
-                        </div>
-                    </section>
-                </aside>
-            </section>
-            <section id="#services"></section>
-            <section id="#avaliable"></section>
-            <section id="#location"></section>
+                        </a>
+                    </div>
+                    <iframe src="" frameborder="0"></iframe>
+                </section>
+            </aside>
+        </section>
+        <section id="#services"></section>
+        <section id="#avaliable"></section>
+        <section id="#location"></section>
         </article>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="agendaPro-content">
+                <div class="agendaPro-info">
+                    <svg viewBox="0 0 24 24" fill="none" width="20px">
+                        <rect x="3" y="4" width="18" height="17" rx="3" stroke="currentColor" stroke-width="2" />
+                        <path d="M8 2V6M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M3 10H21" stroke="currentColor" stroke-width="2" />
+                        <path d="M8 15L10.5 17.5L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <h2>Agenda<span>Pro</span></h2>
+                </div>
+                <span>Mais serviços. Mais pessoas. Mais tempo para o que importa.</span>
+            </div>
+            <div class="footer-links">
+                <h2>Links</h2>
+                <div class="links">
+                    <a href="#">Início</a>
+                    <a href="#">Categoria</a>
+                </div>
+                <div class="links">
+                    <a href="#">Destaques</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </div>
+            <div class="social-media">
+                <h2>Siga-nos</h2>
+                <div class="icon-media">
+                    <a href="">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="18" height="18" rx="5" stroke="#7C3AED" stroke-width="2" />
+                            <circle cx="12" cy="12" r="5" stroke="#7C3AED" stroke-width="2" />
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="#7C3AED" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                                stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="#7C3AED" stroke-width="2" />
+                            <path
+                                d="M8 11V17M8 8V8.01M12 16V11C12 10.4696 12.2107 9.96086 12.5858 9.58579C12.9609 9.21071 13.4696 9 14 9C14.5304 9 15.0391 9.21071 15.4142 9.58579C15.7893 9.96086 16 10.4696 16 11V17"
+                                stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.54 6.42C22.42 5.72 21.87 5.17 21.17 5.05C19.91 4.9 12 4.9 12 4.9C12 4.9 4.09 4.9 2.83 5.05C2.13 5.17 1.58 5.72 1.46 6.42C1.3 7.68 1.3 12 1.3 12C1.3 12 1.3 16.32 1.46 17.58C1.58 18.28 2.13 18.83 2.83 18.95C4.09 19.1 12 19.1 12 19.1C12 19.1 19.91 19.1 21.17 18.95C21.87 18.83 22.42 18.28 22.54 17.58C22.7 16.32 22.7 12 22.7 12C22.7 12 22.7 7.68 22.54 6.42Z"
+                                stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.75 15.02L15.5 12L9.75 8.98V15.02Z" fill="#7C3AED" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>&copy;2026 AgendaPro. Todos os direitos reservados</span>
+            <div>
+                <a href="#">Termos de Uso<span>|</span></a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
