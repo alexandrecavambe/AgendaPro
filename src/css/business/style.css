@@ -7,6 +7,11 @@ body {
     position: relative;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 .banner {
     min-height: 230px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/src/images/barbearia.png");
@@ -203,7 +208,7 @@ body {
 .container #visaogeral {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
     width: 100%;
     background-color: var(--surface);
 }
@@ -267,14 +272,14 @@ body {
     color: var(--primary-dark);
 }
 
-.services {
+.visaogeral-services {
     display: flex;
     flex-direction: column;
     gap: 4px;
     list-style: none;
 }
 
-.services li {
+.visaogeral-services li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -283,35 +288,35 @@ body {
     border-radius: 8px;
 }
 
-.services li .foto-info {
+.visaogeral-services li .foto-info {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.services li .foto-info .services-foto {
+.visaogeral-services li .foto-info .visaogeral-services-foto {
     min-width: 40px;
     max-width: 70px;
 }
 
-.services li .foto-info .services-foto img {
+.visaogeral-services li .foto-info .visaogeral-services-foto img {
     width: 100%;
     object-fit: cover;
 }
 
-.services-info {
+.visaogeral-services-info {
     display: flex;
     flex-direction: column;
 }
 
-.services-info h2 {
+.visaogeral-services-info h2 {
     color: var(--text-primary);
     font-size: clamp(13px, 2.5vw, 15px);
     line-height: 1rem;
     font-weight: 800;
 }
 
-.services-info span {
+.visaogeral-services-info span {
     color: var(--text-secondary);
     font-size: clamp(10px, 2vw, 13px);
     font-weight: 400;
@@ -319,17 +324,17 @@ body {
     padding: 5px 0;
 }
 
-.service-time {
+.visaogeral-service-time {
     display: flex;
     align-items: center;
     gap: 4px;
 }
 
-.service-time svg {
+.visaogeral-service-time svg {
     color: var(--text-secondary);
 }
 
-.service-time span {
+.visaogeral-service-time span {
     color: var(--text-secondary);
     font-size: clamp(10px, 2vw, 12px);
     font-weight: 400;
@@ -337,14 +342,14 @@ body {
     padding: 5px 0;
 }
 
-.services li p {
+.visaogeral-services li p {
     color: var(--text-primary);
     font-size: clamp(10px, 2vw, 12px);
     font-weight: 800;
     line-height: 1.2em;
 }
 
-.services li button {
+.visaogeral-services li button {
     background-color: var(--primary);
     color: var(--surface-secondary);
     font-size: clamp(10px, 2vw, 13px);
@@ -356,65 +361,68 @@ body {
     transition: all 0.3s ease;
 }
 
-.services li button:hover {
+.visaogeral-services li button:hover {
     transform: translateY(-1px);
 }
 
-.service-galeria {
+.visaogeral-service-galeria {
     display: flex;
     flex-direction: column;
 }
 
-.service-galeria ul {
+.visaogeral-service-galeria ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 4px;
     list-style: none;
 }
 
-.service-galeria ul li {
+.visaogeral-service-galeria ul li {
     overflow: hidden;
 }
 
-.service-galeria ul li img {
+.visaogeral-service-galeria ul li img {
     width: 100%;
     height: 100px;
     object-fit: cover;
 }
 
-.avaliable-itens {
+.visaogeral-avaliable-itens {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
 }
 
-.avaliable-item {
+.visaogeral-avaliable-item {
     display: flex;
     justify-content: center;
     gap: 4px;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md)
 }
 
 
 
-.avaliable-item img {
+.visaogeral-avaliable-item img {
     width: 10;
     height: 30px;
     border-radius: 50%;
 }
 
-.avaliable-info {
+.visaogeral-avaliable-info {
     display: flex;
     flex-direction: column;
 }
 
 
-.avaliable-info h2 {
+.visaogeral-avaliable-info h2 {
     color: var(--text-primary);
     font-weight: 800;
     font-size: clamp(10px, 2vw, 13px);
 }
 
-.avaliable-info span {
+.visaogeral-avaliable-info span {
     color: var(--text-secondary);
     font-size: clamp(10px, 2vw, 12px);
     font-weight: 400;
@@ -422,7 +430,7 @@ body {
     padding: 5px 0;
 }
 
-.avaliable-info svg {
+.visaogeral-avaliable-info svg {
     color: goldenrod;
 }
 
@@ -431,6 +439,7 @@ aside {
     flex-direction: column;
     gap: 5px;
     padding: 10px;
+    width: 40%;
 }
 
 .card-agendeseuhorario {
@@ -450,7 +459,7 @@ aside {
 
 .agendeSeuHorario svg {
     color: var(--primary-dark);
-    width: 3vw;
+    width: clamp(20px, 3vw, 30px);
 }
 
 .agendeSeuHorario .description {
@@ -460,7 +469,7 @@ aside {
 
 .agendeSeuHorario .description h2 {
     color: var(--text-primary);
-    font-size: clamp(13px, 2.5vw, 20px);
+    font-size: clamp(12px, 2.5vw, 20px);
     font-weight: 800;
 }
 
@@ -482,6 +491,7 @@ aside {
     font-size: clamp(10px, 2vw, 13px);
     font-weight: 400;
     padding: 5px;
+    margin: 10px 0;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -617,18 +627,18 @@ aside {
     margin-top: 10px;
 }
 
-.localizacao {
+.visaogeral-localizacao {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-.location-header {
+.visaogeral-location-header {
     display: flex;
     justify-content: space-between;
 }
 
-.location-header span {
+.visaogeral-location-header span {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -637,16 +647,256 @@ aside {
     font-weight: 800;
 }
 
-.location-header span svg {
+.visaogeral-location-header span svg {
     color: var(--primary-dark);
     width: 2vw;
 }
 
-.localizacao .btn-local {
+.visaogeral-localizacao .btn-local {
     display: flex;
     align-items: center;
     gap: 5px;
     text-decoration: none;
     color: var(--primary);
     font-size: clamp(10px, 2vw, 12px);
+}
+
+#services {
+    width: 100%;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--surface);
+    padding: 20px;
+}
+
+.services-container h1 {
+    color: var(--text-primary);
+    font-size: clamp(14px, 3vw, 24px);
+    font-weight: 800;
+}
+
+.services-container p {
+    color: var(--text-secondary);
+    font-size: clamp(12px, 1vw, 14px);
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.cards-services {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+}
+
+.cards-services .card-imagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+.cards-services .card-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards-services h2 {
+    color: var(--text-primary);
+    font-size: clamp(12px, 1vw, 15px);
+    font-weight: 800;
+    line-height: 1.2em;
+}
+
+.cards-services .description {
+    color: var(--text-secondary);
+    font-size: clamp(12px, 1vw, 13px);
+    font-weight: 400;
+}
+
+.services-time-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-time-price span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-secondary);
+    font-size: clamp(12px, 1vw, 13px);
+    font-weight: 400;
+}
+
+.price-container {
+    display: flex;
+    gap: 4px;
+    color: var(--primary-dark);
+    font-size: clamp(12px, 1vw, 13px);
+    font-weight: 800;
+}
+
+.price-container span {
+    color: var(--primary-dark);
+    font-weight: 800;
+}
+
+#avaliacoes {
+    width: 100%;
+}
+
+.avaliacoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--surface);
+    padding: 20px;
+}
+
+.avaliacoes-container h1 {
+    color: var(--text-primary);
+    font-size: clamp(14px, 3vw, 24px);
+    font-weight: 800;
+}
+
+.avaliacoes-container p {
+    color: var(--text-secondary);
+    font-size: clamp(12px, 1vw, 14px);
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.avaliacoes-stars-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.avaliacoes-stars-container {
+    color: var(--text-secondary);
+    font-size: clamp(12px, 1vw, 13px);
+    font-weight: 400;
+}
+
+.avaliacoes-stars {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avaliacoes-stars h2 {
+    color: var(--text-primary);
+    font-size: clamp(18px, 4vw, 24px);
+    font-weight: 800;
+}
+
+.avaliacoes-stars .stars svg {
+    color: gold;
+    width: clamp(16px, 3vw, 20px);
+}
+
+.avaliacao-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(170px, 1fr));
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.avaliacao-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 4px 0;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+}
+
+.avaliacao-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.avaliacao-info h2 {
+    color: var(--text-primary);
+    font-weight: 800;
+    font-size: clamp(12px, 2vw, 13px);
+}
+
+.avaliacao-info .comentario {
+    color: var(--text-primary);
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: 500;
+    line-height: 1.2em;
+
+}
+
+.avaliacao-info .stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.avaliacao-info .stars svg {
+    color: gold;
+    width: clamp(12px, 3vw, 16px);
+}
+
+.avaliacao-info .stars .time-comentario {
+    color: var(--text-secondary);
+    font-size: clamp(10px, 2vw, 13px);
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+#location {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface);
+    padding: 10px;
+    width: 100%;
+}
+
+.location-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.location-header h1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-primary);
+    font-size: clamp(14px, 3vw, 24px);
+    font-weight: 800;
+}
+
+.location-header h1 svg {
+    color: var(--primary-dark);
+    width: clamp(20px, 2vw, 24px);
+}
+
+.location-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: clamp(14px, 2vw, 16px);
 }
