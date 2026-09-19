@@ -1,0 +1,181 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--background);
+    position: relative;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-result-header {
+    background-color: #0D1117;
+    color: var(--surface);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 54px;
+}
+
+.container-result-header-title {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.container-result-header-title h1 {
+    color: var(--surface);
+    font-size: clamp(16px, 3.4vw, 28px);
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+.container-result-header-title span {
+    color: var(--text-light);
+    font-size: clamp(10px, 2vw, 13px);
+    font-weight: 400;
+}
+
+.container-result-header-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: var(--surface);
+    padding: 0 8px;
+    max-width: 500px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.container-result-header-pesquisa svg {
+    color: var(--text-primary);
+}
+
+.container-result-header-pesquisa input {
+    width: 100%;
+    height: 100%;
+    color: var(--text-primary);
+    font-size: clamp(10px, 2vw, 15px);
+    font-weight: 400;
+    padding: 10px;
+    border: none;
+    outline: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container-caminho {
+    padding: 20px;
+}
+
+.container-caminho nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 20px;
+}
+
+.container-caminho nav svg {
+    color: var(--primary);
+}
+
+.container-caminho nav ul {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+}
+
+.container-caminho nav ul li a {
+    color: var(--text-primary);
+    font-size: clamp(10px, 2vw, 15px);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.container-caminho nav ul li+li::before {
+    content: "›";
+    color: var(--text-primary);
+}
+
+.container-filter-resultados {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.container-filter {
+    padding: 8px 20px;
+}
+
+.container-filter form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 20px;
+}
+
+.container-filter form h1 {
+    color: var(--text-primary);
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 800;
+    line-height: 2.2rem;
+}
+
+.container-filter form h2 {
+    color: var(--text-primary);
+    font-size: clamp(12px, 2.5vw, 16px);
+    font-weight: 800;
+
+}
+
+.container-filter form select {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #00000025;
+    outline: none;
+}
+
+.container-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.container-checkbox .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container-checkbox .checkbox label {
+    color: var(--text-primary);
+    font-size: clamp(10px, 1.5vw, 14px);
+}
+
+.container-filter form button {
+    background-color: var(--primary-dark);
+    color: var(--surface);
+    padding: clamp(4px, 1vw, 8px);
+    font-size: clamp(10px, 2vw, 14px);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container-filter form button:hover {
+    transform: scale(1.03);
+}
+
+.resultados {
+    width: 100%;
+}

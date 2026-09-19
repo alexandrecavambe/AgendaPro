@@ -45,7 +45,7 @@ body {
 
 
 .caminho nav ul li+li::before {
-    content: ">";
+    content: "›";
     color: #ccc;
 }
 

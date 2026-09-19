@@ -37,11 +37,11 @@
     </header>
     <main class="container">
         <div class="container-result-header">
-            <div class="result-title">
+            <div class="container-result-header-title">
                 <h1>Resultados</h1>
                 <span>Encontre os melhores profissionais para perto de você</span>
             </div>
-            <div class="result-pesquisa">
+            <div class="container-result-header-pesquisa">
                 <svg viewBox="0 0 24 24" fill="none" width="20px">
                     <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
                     <path d="M20 20L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -51,22 +51,27 @@
         </div>
         <div class="container-caminho">
             <nav aria-label="Navegação">
+                <svg viewBox="0 0 24 24" fill="none" width="16px">
+                    <path d="M3 11L12 3L21 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M5 10V21H19V10" stroke="currentColor" stroke-width="2" />
+                </svg>
                 <ul>
                     <li>
-                        <a href="/index.html#home">
+                        <a href="/index.html#categoria">
                             Início
                         </a>
                     </li>
                     <li>
-                        <a href="/index.html#resultados">
+                        <a href="/result.html">
                             Resultados
                         </a>
                     </li>
-                    <li aria-current="page">Técnicos</li>
+                    <li aria-current="page"></li>
                 </ul>
             </nav>
         </div>
-        <section class="filter-resultados">
+        <section class="container-filter-resultados">
             <aside class="container-filter">
                 <form action="#" class="filter">
                     <h1>Filtros</h1>
@@ -119,7 +124,7 @@
                     <button type="submit">Limpar filtros</button>
                 </form>
             </aside>
-            <div class="resultados">
+            <article class="resultados">
                 <div class="result-title">
                     <h2>Resultados para</h2>
                     <h1>Técnicos</h1>
@@ -537,7 +542,7 @@
 
                     </div>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
     <footer>
