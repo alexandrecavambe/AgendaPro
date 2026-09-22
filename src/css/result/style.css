@@ -97,7 +97,6 @@ body {
     color: var(--text-primary);
     font-size: clamp(10px, 2vw, 15px);
     text-decoration: none;
-    transition: all 0.3s ease;
 }
 
 .container-caminho nav ul li+li::before {
@@ -107,8 +106,9 @@ body {
 
 .container-filter-resultados {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
     gap: 10px;
+    padding: 20px;
 }
 
 .container-filter {
@@ -119,7 +119,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    padding: 0 20px;
+    padding: 0px;
 }
 
 .container-filter form h1 {
@@ -158,7 +158,7 @@ body {
 
 .container-checkbox .checkbox label {
     color: var(--text-primary);
-    font-size: clamp(10px, 1.5vw, 14px);
+    font-size: clamp(10px, 2vw, 12px);
 }
 
 .container-filter form button {
@@ -176,6 +176,199 @@ body {
     transform: scale(1.03);
 }
 
-.resultados {
+article {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: 10px;
+}
+
+.container-title-ordem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ordem-title h2 {
+    color: var(--text-primary);
+    font-size: clamp(10px, 2vw, 14px);
+}
+
+.ordem-title h1 {
+    color: var(--text-primary);
+    font-size: clamp(18px, 3vw, 28px);
+    font-weight: 800;
+    line-height: 2rem;
+}
+
+.ordem-title h1::after,
+.ordem-title h1::before {
+    content: "''";
+    padding: 5px;
+}
+
+article>p {
+    color: var(--text-light);
+    font-size: clamp(10px, 2vw, 14px);
+    font-weight: 600;
+}
+
+.btn-ordenar>button {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: none;
+    padding: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-ordenar>button:hover {
+    background-color: var(--primary);
+    color: var(--surface);
+}
+
+
+.grid-resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.item-resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+}
+
+.card-banner {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid #0D1117;
+    padding: 8px;
+    position: relative;
+}
+
+.card-banner span {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--surface);
+    padding: 4px;
+    border-radius: 10px;
+    font-size: clamp(8px, 2vw, 10px);
+}
+
+.card-banner svg {
+    width: 16px;
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+}
+
+.title-card {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+}
+
+.title-card h2 {
+    color: var(--text-primary);
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.title-card svg {
+    width: clamp(14px, 2vw, 18px);
+    color: var(--success);
+}
+
+.item-resultado .avaliable {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 8px;
+    font-size: clamp(10px, 2vw, 12px);
+    color: goldenrod;
+}
+
+.item-resultado .avaliable svg {
+    width: clamp(12px, 2vw, 16px);
+}
+
+.item-resultado .location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 8px;
+}
+
+.item-resultado .location span {
+    color: var(--text-muted);
+    font-size: clamp(10px, 2vw, 12px);
+}
+
+
+.item-resultado .location svg {
+    width: clamp(12px, 2vw, 16px);
+    color: orangered;
+}
+
+.item-resultado .description {
+    color: var(--text-muted);
+    font-size: clamp(8px, 2vw, 10px);
+    padding: 0 8px;
+}
+
+.item-resultado .hastags {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 8px;
+}
+
+.item-resultado .hastags span {
+    background-color: rgb(179, 191, 224);
+    color: var(--text-primary);
+    font-size: clamp(8px, 2vw, 10px);
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.item-resultado p {
+    color: var(--text-muted);
+    font-size: clamp(10px, 2vw, 12px);
+    padding: 0 8px;
+
+}
+
+.item-resultado p>span {
+    color: var(--text-primary);
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: 600;
+}
+
+.item-resultado button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 94%;
+    padding: 4px;
+    margin: auto;
+    background-color: transparent;
+    color: var(--primary-dark);
+    font-size: clamp(10px, 2vw, 12px);
+    font-weight: 600;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+}
+
+.item-resultado button svg {
+    width: clamp(16px, 2vw, 18px);
 }
