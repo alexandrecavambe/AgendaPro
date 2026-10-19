@@ -1,3 +1,12 @@
+:root {
+    --main-color: #c41e67;
+    --dark-color: #a71555;
+    --step-color: #ced7e8;
+    --step-size: 32px;
+    --steps: 4;
+    --progress-width: calc((var(--steps) - 1) / var(--steps) * 100%);
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -638,12 +647,260 @@ aside {
 }
 
 /* modal agendamento */
-dialog {
-    background-color: #fafafa;
-    padding: 25px;
-    border: 1px solid var(--border);
-    border-radius: 10px;
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    opacity: 0;
+    display: none;
 }
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    width: min(600px, 80%);
+    box-shadow: 0 4px 16px rgba(167, 21, 84, 0.1);
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.form-header h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+dialog form h2 {
+
+    margin-bottom: 16px;
+}
+
+
+dialog form h3 {
+    margin-bottom: 16px;
+}
+
+dialog form input,
+textarea {
+    outline-color: var(--main-color);
+    border: 1px solid lightgrey;
+    padding: 8px 16px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+}
+
+dialog form textarea {
+    resize: none;
+}
+
+dialog form label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+dialog form button {
+    cursor: pointer;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 16px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+dialog form button:active,
+button:hover {
+    background-color: var(--dark-color);
+}
+
+dialog form button:disabled {
+    opacity: 0.8;
+}
+
+dialog form button:focus {
+    outline-color: #333;
+}
+
+dialog form button:nth-of-type(3) {
+    background-color: #333;
+}
+
+dialog form button[type="submit"]:hover {
+    background-color: #333;
+}
+
+dialog form button[type="submit"]:active {
+    background-color: #333;
+}
+
+/* form styles */
+
+.progress-container {
+    position: relative;
+}
+
+.progress-container::before {
+    content: '';
+    height: 4px;
+    width: var(--progress-width);
+    background-color: var(--step-color);
+    position: absolute;
+    top: calc(var(--step-size) / 2);
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.progress-container .progress {
+    height: 4px;
+    width: var(--progress-width);
+    background-color: var(--main-color);
+    position: absolute;
+    top: calc(var(--step-size) / 2);
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 2;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s;
+}
+
+.progress-container ol {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    counter-reset: step-number;
+    position: relative;
+    z-index: 3;
+}
+
+.progress-container li {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--step-color);
+    transition: 0.3s linear 0.3s;
+}
+
+.progress-container li::before {
+    counter-increment: step-number;
+    content: counter(step-number);
+    background-color: var(--step-color);
+    width: var(--step-size);
+    height: var(--step-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.3s linear 0.3s;
+}
+
+.progress-container li:where(.done, .current) {
+    color: #333;
+    font-weight: 500;
+}
+
+.progress-container li.done::before {
+    background-color: var(--main-color);
+}
+
+.progress-container li.current::before {
+    background-color: var(--main-color);
+    box-shadow: 0 0 0 3px rgba(167, 21, 84, 0.25);
+}
+
+.steps-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.step {
+    flex: 1 0 100%;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    height: fit-content;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.step.current {
+    opacity: 1;
+}
+
+.step h3 {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.step p {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.service-option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.service-option img {
+    width: 40px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 16px;
+    padding-inline: 8px;
+}
+
+.controls button {
+    flex: 1;
+}
+
+.completed {
+    text-align: center;
+}
+
+.completed h3 {
+    margin-bottom: 8px;
+}
+
+.completed svg {
+    width: 100px;
+    height: 100px;
+    color: yellowgreen;
+}
+
+.completed:not([hidden])~* {
+    display: none;
+}
+
+
+
+
+
 
 
 

@@ -1,6 +1,7 @@
 // secção de modal
 
 // open modal
+
 const openModais = document.querySelectorAll('.open-modal');
 openModais.forEach(openModal => {
     openModal.addEventListener('click', () => {
