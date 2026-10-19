@@ -837,6 +837,14 @@ dialog form button[type="submit"]:active {
 
 .form-control {
     width: 100%;
+    padding: 4px;
+    margin-top: 14px;
+    border-radius: 8px;
+}
+
+.form-control.active {
+    background: rgba(1, 1, 255, 0.26);
+    border: 1px solid rgba(90, 90, 250, 0.397);
 }
 
 .step.current {
@@ -844,15 +852,16 @@ dialog form button[type="submit"]:active {
 }
 
 .step h3 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 900;
+    margin: 0;
+    padding: 5px 0;
 }
 
 .step p {
     color: var(--text-muted);
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
-    margin-bottom: 20px;
 }
 
 .service-option {
@@ -863,8 +872,39 @@ dialog form button[type="submit"]:active {
 }
 
 .service-option img {
-    width: 40px;
+    width: 45px;
 }
+
+.service-option input {
+    width: 16px;
+    margin-left: 35px;
+}
+
+.service-option strong {
+    color: var(--text-primary);
+    font-size: 11px;
+    font-weight: 800;
+    margin-left: 35px;
+}
+
+.service-option .service-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.box-service-info-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+
 
 .controls {
     display: flex;
