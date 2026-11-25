@@ -21,9 +21,9 @@ body {
     scroll-behavior: smooth;
 }
 
-/* banner styles */
+/* hero styles */
 
-.banner {
+.hero {
     min-height: 230px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/src/images/barbearia.png");
     background-size: cover;
@@ -77,13 +77,13 @@ body {
     flex-direction: column;
 }
 
-.perfil-info .banner-avaliable {
+.perfil-info .hero-avaliable {
     display: flex;
     align-items: center;
     gap: 2px;
 }
 
-.perfil-info .banner-avaliable svg {
+.perfil-info .hero-avaliable svg {
     color: gold;
     max-width: 20px;
 }
@@ -124,7 +124,7 @@ body {
     font-size: clamp(10px, 2vw, 12px);
 }
 
-.banner button {
+.hero button {
     position: absolute;
     right: 37px;
     bottom: 12px;
@@ -142,7 +142,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.banner button:hover {
+.hero button:hover {
     color: var(--warning-light);
     transform: translateY(-4%);
 }
@@ -500,15 +500,15 @@ aside {
     padding: 5px 0;
 }
 
-.card-agendeseuhorario button {
+.open-modal {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     background-color: var(--primary);
     color: var(--surface-secondary);
-    font-size: clamp(10px, 2vw, 13px);
-    font-weight: 400;
+    font-size: clamp(12px, 5vw, 14px);
+    font-weight: 500;
     padding: 5px;
     margin: 10px 0;
     border: none;
@@ -517,8 +517,8 @@ aside {
     transition: all 0.3s ease;
 }
 
-.card-agendeseuhorario button svg {
-    width: 2vw;
+.open-modal svg {
+    width: 1.4vw;
 }
 
 .info-contact {
@@ -677,8 +677,16 @@ dialog {
     gap: 10px;
 }
 
-dialog form h2 {
+.form-header .close-modal {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: 16px;
+}
 
+
+dialog form h2 {
     margin-bottom: 16px;
 }
 
@@ -719,7 +727,7 @@ dialog form button {
 
 dialog form button:active,
 button:hover {
-    background-color: var(--dark-color);
+    background-color: var(--primary);
 }
 
 dialog form button:disabled {
@@ -823,6 +831,7 @@ dialog form button[type="submit"]:active {
 
 .steps-container {
     display: flex;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -842,10 +851,6 @@ dialog form button[type="submit"]:active {
     border-radius: 8px;
 }
 
-.form-control.active {
-    background: rgba(1, 1, 255, 0.26);
-    border: 1px solid rgba(90, 90, 250, 0.397);
-}
 
 .step.current {
     opacity: 1;
@@ -869,6 +874,11 @@ dialog form button[type="submit"]:active {
     align-items: center;
     gap: 20px;
     width: 100%;
+}
+
+.service-option.active {
+    background: rgba(1, 1, 255, 0.26);
+    border: 1px solid rgba(90, 90, 250, 0.397);
 }
 
 .service-option img {
@@ -904,7 +914,114 @@ dialog form button[type="submit"]:active {
     margin-left: 35px;
 }
 
+.header-calendar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
 
+.header-calendar svg {
+    color: var(--primary-dark);
+    width: 2vw;
+}
+
+.header-calendar-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.header-calendar-info h2 {
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.header-calendar-info p {
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.calendar-time {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calendar-time h2 {
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hours-info h3 {
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.hours-info p {
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hours-disponiveis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.header-yourdata {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.header-yourdata svg {
+    color: var(--primary-dark);
+    width: 2vw;
+}
+
+.yourdata-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.yourdata-info h3 {
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.yourdata-info p {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
 
 .controls {
     display: flex;
