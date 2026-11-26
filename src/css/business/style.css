@@ -697,7 +697,7 @@ dialog form h3 {
 
 dialog form input,
 textarea {
-    outline-color: var(--main-color);
+    outline-color: var(--primary-dark);
     border: 1px solid lightgrey;
     padding: 8px 16px;
     border-radius: 4px;
@@ -714,19 +714,21 @@ dialog form label {
     margin-bottom: 4px;
 }
 
-dialog form button {
+dialog form .prev-btn,
+dialog form .next-btn,
+dialog form button[type="submit"] {
     cursor: pointer;
     border: none;
     border-radius: 16px;
     padding: 8px 16px;
-    background-color: var(--main-color);
+    background-color: var(--primary-dark);
     color: #fff;
     font-size: 14px;
     transition: 0.3s;
 }
 
-dialog form button:active,
-button:hover {
+dialog form .prev-btn,
+dialog form .next-btn:hover {
     background-color: var(--primary);
 }
 
@@ -743,7 +745,7 @@ dialog form button:nth-of-type(3) {
 }
 
 dialog form button[type="submit"]:hover {
-    background-color: #333;
+    background-color: #424242;
 }
 
 dialog form button[type="submit"]:active {
@@ -760,7 +762,7 @@ dialog form button[type="submit"]:active {
     content: '';
     height: 4px;
     width: var(--progress-width);
-    background-color: var(--step-color);
+    background-color: var(--primary-dark);
     position: absolute;
     top: calc(var(--step-size) / 2);
     left: 50%;
@@ -770,7 +772,7 @@ dialog form button[type="submit"]:active {
 .progress-container .progress {
     height: 4px;
     width: var(--progress-width);
-    background-color: var(--main-color);
+    background-color: var(--primary-dark);
     position: absolute;
     top: calc(var(--step-size) / 2);
     left: 50%;
@@ -821,35 +823,31 @@ dialog form button[type="submit"]:active {
 }
 
 .progress-container li.done::before {
-    background-color: var(--main-color);
+    background-color: var(--primary-dark);
 }
 
 .progress-container li.current::before {
-    background-color: var(--main-color);
-    box-shadow: 0 0 0 3px rgba(167, 21, 84, 0.25);
+    background-color: var(--primary-dark);
+    box-shadow: 0 0 0 3px var(--primary-dark);
 }
 
 .steps-container {
     display: flex;
-    height: 100%;
+    align-items: flex-start;
     overflow: hidden;
+    transition: height 0.3s ease;
 }
 
 .step {
-    flex: 1 0 100%;
+    flex: 0 0 100%;
     width: 100%;
+    box-sizing: border-box;
     padding: 20px;
+    margin: 0;
     opacity: 0;
-    transition: opacity 0.3s;
-    height: fit-content;
+    transition: opacity 0.3s ease;
 }
 
-.form-control {
-    width: 100%;
-    padding: 4px;
-    margin-top: 14px;
-    border-radius: 8px;
-}
 
 
 .step.current {
@@ -869,11 +867,20 @@ dialog form button[type="submit"]:active {
     font-weight: 500;
 }
 
+.form-control {
+    width: 100%;
+    padding: 4px;
+    margin-top: 14px;
+    border-radius: 8px;
+}
+
 .service-option {
     display: flex;
     align-items: center;
     gap: 20px;
     width: 100%;
+    padding: 0 10px;
+
 }
 
 .service-option.active {

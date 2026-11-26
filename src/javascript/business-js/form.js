@@ -1,125 +1,245 @@
+
 document.addEventListener('DOMContentLoaded', () => {
+
+    // =====================================
+    // ELEMENTOS DO FORMULÁRIO
+    // =====================================
+
     const form = document.querySelector('.form-wizard');
+
     const progress = form.querySelector('.progress');
     const stepsContainer = form.querySelector('.steps-container');
     const steps = form.querySelectorAll('.step');
     const stepsIndicators = form.querySelectorAll('.progress-container li');
+
     const prevButton = form.querySelector('.prev-btn');
     const nextButton = form.querySelector('.next-btn');
     const submitButton = form.querySelector('.submit-btn');
 
-    document.documentElement.style.setProperty("--steps", stepsIndicators.length);
+    document.documentElement.style.setProperty(
+        "--steps",
+        stepsIndicators.length
+    );
 
     let currentStep = 0;
 
+
+    // =====================================
+    // ATUALIZAR PROGRESSO
+    // =====================================
+
     const updateProgress = () => {
-        let width = currentStep / (stepsIndicators.length - 1)
+
+        let width = currentStep / (stepsIndicators.length - 1);
+
         progress.style.transform = `scaleX(${width})`;
 
-        stepsContainer.style.height = steps[currentStep].offsetHeight + "px"
-
+        // Atualizar indicadores
         stepsIndicators.forEach((indicator, index) => {
             indicator.classList.toggle('current', currentStep === index);
             indicator.classList.toggle('done', currentStep > index);
         });
+
+        // Atualizar etapas
         steps.forEach((step, index) => {
-            step.style.transform = `translateX(-${currentStep * 100}%)`
+            step.style.transform = `translateX(-${currentStep * 100}%)`;
             step.classList.toggle('current', currentStep === index);
         });
 
-        updateButton()
-    }
+        updateButton();
+
+        // Calcular a altura depois de atualizar as etapas
+        requestAnimationFrame(() => {
+            const activeStep = steps[currentStep];
+
+            stepsContainer.style.height =
+                `${activeStep.getBoundingClientRect().height}px`;
+        });
+    };
+
+
+    // =====================================
+    // ATUALIZAR BOTÕES
+    // =====================================
 
     const updateButton = () => {
+
         prevButton.hidden = currentStep === 0;
-        nextButton.hidden = currentStep >= stepsIndicators.length - 1;
+
+        nextButton.hidden =
+            currentStep >= stepsIndicators.length - 1;
+
         submitButton.hidden = !nextButton.hidden;
-    }
+    };
+
+
+    // =====================================
+    // VALIDAR ETAPA ATUAL
+    // =====================================
 
     const isValidStep = () => {
-        const fields = steps[currentStep].querySelectorAll('input, textarea');
+
+        const fields = steps[currentStep].querySelectorAll(
+            'input, textarea'
+        );
+
         return [...fields].every((field) => field.reportValidity());
-    }
-
-    // event listeners
-
-    const inputs = form.querySelectorAll('input, textarea');
-    inputs.forEach(input => input.addEventListener('focus', (e) => {
-        const focusedElement = e.target;
-
-        //get the step where o focused element belongs
-        const focusedStep = [...steps].findIndex(step => step.contains(focusedElement));
-
-        if (focusedStep !== -1 && focusedStep !== currentStep) {
-            if (!isValidStep()) {
-                return;
-            }
-            currentStep = focusedStep;
-            updateProgress();
-
-            stepsContainer.scrollTop = 0;
-            stepsContainer.scrollLeft = 0;
-        }
-    }));
+    };
 
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault(); //prevent form submission
+    // =====================================
+    // ABRIR MODAL
+    // =====================================
 
-        if (!form.checkVisibility()) {
-            return;
-        }
+    const openModais = document.querySelectorAll('.open-modal');
 
-        const formData = new FormData(form);
+    openModais.forEach(openModal => {
 
-        //send the data somewhere
-        console.log(Object.fromEntries(formData));
+        openModal.addEventListener('click', () => {
 
-        submitButton.disabled = true;
-        submitButton.textContent = 'Submitting...';
+            const modalId = openModal.getAttribute('data-modal');
 
+            const modal = document.getElementById(modalId);
 
-        setTimeout(() => {
-            document.querySelector('.completed').hidden = false;
+            modal.showModal();
+
+            requestAnimationFrame(() => {
+                updateProgress();
+            });
+
         });
+
     });
 
 
+    // =====================================
+    // FECHAR MODAL
+    // =====================================
+
+    const closeModais = document.querySelectorAll('.close-modal');
+
+    closeModais.forEach(closeModal => {
+
+        closeModal.addEventListener('click', () => {
+
+            const modalId = closeModal.getAttribute('data-modal');
+
+            const modal = document.getElementById(modalId);
+
+            modal.close();
+
+        });
+
+    });
+
+
+    // =====================================
+    // EVENTOS DOS INPUTS
+    // =====================================
+
+    const inputs = form.querySelectorAll('input, textarea');
+
+    inputs.forEach(input => {
+
+        input.addEventListener('focus', (e) => {
+
+            const focusedElement = e.target;
+
+            const focusedStep = [...steps].findIndex(step =>
+                step.contains(focusedElement)
+            );
+
+            if (focusedStep !== -1 && focusedStep !== currentStep) {
+
+                if (!isValidStep()) {
+                    return;
+                }
+
+                currentStep = focusedStep;
+
+                updateProgress();
+
+                stepsContainer.scrollTop = 0;
+                stepsContainer.scrollLeft = 0;
+
+            }
+
+        });
+
+    });
+
+
+    // =====================================
+    // ENVIAR FORMULÁRIO
+    // =====================================
+
+    form.addEventListener('submit', (e) => {
+
+        e.preventDefault();
+
+        if (!form.checkVisibility()) return;
+
+        const formData = new FormData(form);
+
+        console.log(Object.fromEntries(formData));
+
+        submitButton.disabled = true;
+
+        submitButton.textContent = 'Submitting...';
+
+        setTimeout(() => {
+
+            document.querySelector('.completed').hidden = false;
+
+        });
+
+    });
+
+
+    // =====================================
+    // BOTÃO ANTERIOR
+    // =====================================
+
     prevButton.addEventListener('click', (e) => {
-        e.preventDefault(); // prevent form submission
+
+        e.preventDefault();
 
         if (currentStep > 0) {
-            currentStep--;
-            updateProgress();
-        }
-    })
-    nextButton.addEventListener('click', (e) => {
-        e.preventDefault(); // prevent form submission
 
-        if (!isValidStep()) {
-            return;
+            currentStep--;
+
+            updateProgress();
+
         }
+
+    });
+
+
+    // =====================================
+    // BOTÃO SEGUINTE
+    // =====================================
+
+    nextButton.addEventListener('click', (e) => {
+
+        e.preventDefault();
+
+        if (!isValidStep()) return;
 
         if (currentStep < stepsIndicators.length - 1) {
+
             currentStep++;
+
             updateProgress();
+
         }
-    })
 
-    updateProgress()
-
-
-    // o mesmo que a arrowfunction acima
-
-    // function updateprogress(){
-    //     let width = currentStep / (stepsIndicators.length - 1)
-    //     progress.style.transform = `scaleX(${width})`;
-
-    //     stepsIndicators.forEach((indicator, index) => {
-    //         indicator.classList.toggle('current', currentStep === index);
-    //         indicator.classList.toggle('done', currentStep > index);
-    //     });
-    // }
+    });
 
 
-})
+    // =====================================
+    // INICIALIZAR
+    // =====================================
+
+    updateProgress();
+
+});
